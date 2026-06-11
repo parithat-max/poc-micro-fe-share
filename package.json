@@ -2,7 +2,7 @@
   "name": "@parithat-max/share",
   "version": "1.0.2",
   "main": "./dist/index.js",
-  "module": "./dist/index.js",
+  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "files": [
     "dist"
@@ -11,7 +11,11 @@
     "registry": "https://npm.pkg.github.com"
   },
   "exports": {
-    "./*": "./src/*.tsx"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
   },
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts",
