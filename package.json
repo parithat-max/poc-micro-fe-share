@@ -1,5 +1,5 @@
 {
-  "name": "@parithat-max/share-ui",
+  "name": "@parithat-max/share",
   "version": "1.0.0",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
